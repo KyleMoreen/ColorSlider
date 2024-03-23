@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Color Slider</h1>
+        <div class="color-info" id="color-info">
+            <div class="hue-container" id="hue-container">
+                <div class="hue-label" id="hue-label">Hue</div>
+                <div class="hue-value" id="hue-value">0</div>
+                <input class="hue-slider" id="hue-slider" oninput="changeHsl()" type="range" value="0" min="0" max="360">
+            </div>
+            <div class="saturation-container" id="saturation-container">
+                <div class="saturation-label" id="saturation-label">Saturation</div>
+                <div class="saturation-value" id="saturation-value">100</div>
+                <input class="saturation-slider" id="saturation-slider" oninput="changeHsl()" type="range" value="100" min="0" max="100">
+            </div>
+            <div class="lightness-container" id="lightness-container">
+                <div class="lightness-label" id="lightness-label">Lightness</div>
+                <div class="lightness-value" id="lightness-value">50</div>
+                <input class="lightness-slider" id="lightness-slider" oninput="changeHsl()" type="range" value="50" min="0" max="100">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
